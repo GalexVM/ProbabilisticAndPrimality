@@ -51,7 +51,7 @@ bool MillerRabinTest(ZZ n, ZZ k){
 
         if(x == 1 || x == n - 1)
             continue;
-        for(int i = 0; i < n-1; i++){//repeat n-1 times
+        for(int i = 0; i < r-1; i++){//repeat r-1 times
             x = mod(x*x,n);
             if(x == n-1)
                 continueFor=true;
